@@ -7,7 +7,7 @@ class FactorialCommand extends Command {
 
     execute(args) {
         if (args.length < 1) {
-            return 'Error: A numbers is required.';
+            return 'Error: A number is required.';
         }
         let n = parseInt(args[0]);
         let result = 1
