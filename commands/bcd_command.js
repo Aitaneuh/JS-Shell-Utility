@@ -1,8 +1,8 @@
 import Command from './commands.js';
 
-class LCMCommand extends Command {
+class BCDCommand extends Command {
     constructor() {
-        super('lcm', 'Calculate the lowest common multiple between two numbers. Usage: lcm <number1> <number2>');
+        super('bcd', 'Calculate the biggest common divider between two numbers. Usage: bcd <number1> <number2>');
     }
 
     execute(args) {
@@ -17,23 +17,23 @@ class LCMCommand extends Command {
 
         let result1 = [];
         let result2 = [];
-        let lcm = null;
-        let i = 1;
+        let bcd = null;
 
-        while (lcm === null) {
-            result1.push(number1 * i);
-            result2.push(number2 * i);
+        let i = 1;
+        while (bcd === null) {
+            result1.push(number1 / i);
+            result2.push(number2 / i);
 
             result1.forEach((item) => {
                 if (result2.includes(item)) {
-                    lcm = item;
+                    bcd = item;
                 }
             });
             i++;
         }
 
-        return `The LCM between ${number1} and ${number2} is : ${lcm}`;
+        return `The BCD between ${number1} and ${number2} is : ${bcd}`;
     }
 }
 
-export default LCMCommand;
+export default BCDCommand;
