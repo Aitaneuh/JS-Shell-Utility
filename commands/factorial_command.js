@@ -10,6 +10,9 @@ class FactorialCommand extends Command {
             return 'Error: A number is required.';
         }
         let n = parseInt(args[0]);
+        if (isNaN(n)) {
+            return 'Error: The argument needs to be numbers.';
+        }
         let result = 1
         for (let i = n; i > 0; i--) {
             result *= i;

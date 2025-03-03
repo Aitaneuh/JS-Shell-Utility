@@ -13,6 +13,9 @@ class FactorialCommand extends Command {
         let lastN = 0;
         let res = 0;
         let maxList = parseInt(args[0]);
+        if (isNaN(maxList)) {
+            return 'Error: The argument needs to be numbers.';
+        }
         let msg = "";
         console.log("Fibonacci number 0 : 0");
         console.log("Fibonacci number 1 : 1");
