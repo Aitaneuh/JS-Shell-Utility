@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class FactorialCommand extends Command {
     constructor() {
-        super('fibo', 'Calculate the Fibonacci sequence until n. Usage: fibo <number> ');
+        super('fibo', 'Calculate the Fibonacci sequence until n. Usage: fibo <number>', 'Input: fibo 8\n\nOutput:\nFibonacci number 0 : 0\nFibonacci number 1 : 1\n...\nFibonacci number 8 : 21');
     }
 
     execute(args) {

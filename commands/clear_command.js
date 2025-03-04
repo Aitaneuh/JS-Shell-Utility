@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class ClearCommand extends Command {
     constructor() {
-        super('clear', 'Clear the console shell.');
+        super('clear', 'Clear the console shell.', 'Input: clear\n\nOutput: Console has been cleared.');
     }
 
     execute(args) {

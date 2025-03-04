@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class PyramidCommand extends Command {
     constructor() {
-        super('pyra', 'Draw a squared pyramid of a length n. Usage: pyra <number> ');
+        super('pyra', 'Draw a squared pyramid of a length n. Usage: pyra <number>', 'Input: pyra 4\n\nOutput:\n   *\n  * *\n * * *\n* * * *');
     }
 
     execute(args) {

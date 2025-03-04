@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class LCMCommand extends Command {
     constructor() {
-        super('lcm', 'Calculate the lowest common multiple between two numbers. Usage: lcm <number1> <number2>');
+        super('lcm', 'Calculate the lowest common multiple between two numbers. Usage: lcm <number1> <number2>', 'Input: lcm 64 24\n\nOutput: The LCM between 64 and 24 is : 192');
     }
 
     execute(args) {

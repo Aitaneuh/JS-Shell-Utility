@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class FactorialCommand extends Command {
     constructor() {
-        super('fact', 'Calculate the factorial n! of a number n. Usage: fact <number> ');
+        super('fact', 'Calculate the factorial n! of a number n. Usage: fact <number>', 'Input: fact 12\n\nOutput: The factorial of 12 is : 479001600');
     }
 
     execute(args) {

@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class BCDCommand extends Command {
     constructor() {
-        super('bcd', 'Calculate the biggest common divider between two numbers. Usage: bcd <number1> <number2>');
+        super('bcd', 'Calculate the biggest common divider between two numbers. Usage: bcd <number1> <number2>', 'Input: bcd 64 24\n\nOutput: The BCD between 64 and 24 is : 8');
     }
 
     execute(args) {

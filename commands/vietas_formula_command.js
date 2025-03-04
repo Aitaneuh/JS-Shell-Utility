@@ -2,7 +2,7 @@ import Command from './commands.js';
 
 class VietasFormulaCommand extends Command {
     constructor() {
-        super('vieta', 'Calculate the solution of a second degree equation using the vieta\'s formula. Usage: vieta <x squared> <x> <decimal>');
+        super('vieta', 'Calculate the solution of a second degree equation using the vieta\'s formula. Usage: vieta <x squared> <x> <decimal>', 'Input: vieta 1 4 3\n\n Output:\n1x² + 4x + 3\n\nS = {-1;-3}');
     }
 
     execute(args) {
